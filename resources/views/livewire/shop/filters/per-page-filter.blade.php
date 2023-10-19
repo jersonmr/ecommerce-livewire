@@ -1,3 +1,7 @@
 <div>
-    {{-- Close your eyes. Count to one. That is how long forever feels. --}}
+    <select wire:model.live="filter.perPage" class="form-select">
+        @foreach($options as $option)
+            <option value="{{ $option }}">{{ $option }}</option>
+        @endforeach
+    </select>
 </div>

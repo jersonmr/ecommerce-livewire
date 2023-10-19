@@ -3,6 +3,7 @@
 namespace App\Livewire\Shop\Lists;
 
 use App\Enums\Filters\ShopFilters;
+use App\Livewire\Shop\Filters\PerPageFilter;
 use App\Models\Product;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pipeline\Pipeline;
@@ -79,7 +80,7 @@ class ProductsList extends Component
         )
         ->thenReturn();
 
-        return $products->paginate(session(key: 'shop:perPage', default: 4));
+        return $products->paginate(session(key: 'shop:perPage', default: PerPageFilter::DEFAULT_PER_PAGE));
     }
 
     public function render(): \Illuminate\Contracts\View\View
