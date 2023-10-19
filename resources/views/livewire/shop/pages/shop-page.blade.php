@@ -31,7 +31,7 @@
         {{-- Products --}}
         <div class="col-sm-12 col-md-8 col-lg-8 col-xl-9 col-xxl-10">
             <div class="row">
-                <div class="col-auto">
+                <div class="col-auto mb-3">
                     <button class="btn btn-danger" wire:click="resetFilters">
                         <i class="fas fa-undo"></i>
                     </button>
