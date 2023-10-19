@@ -49,7 +49,6 @@
             <div class="row">
                 <div class="col-12">
                     <livewire:shop.lists.products-list />
-                    <x-product-card :product="$product" />
                 </div>
             </div>
         </div>

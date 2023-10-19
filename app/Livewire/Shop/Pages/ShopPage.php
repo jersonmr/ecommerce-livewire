@@ -14,9 +14,6 @@ class ShopPage extends Component
 
     public function render(): \Illuminate\Contracts\View\View
     {
-        $product = Product::first();
-        return view('livewire.shop.pages.shop-page', [
-            'product' => $product,
-        ]);
+        return view('livewire.shop.pages.shop-page');
     }
 }
