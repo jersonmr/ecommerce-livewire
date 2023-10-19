@@ -19,6 +19,9 @@ class ProductsList extends Component
 
     private array $filters = [
         'category' => [],
+        'search' => '',
+        'price' => [],
+        'rating' => null,
     ];
 
     public function mount(): void

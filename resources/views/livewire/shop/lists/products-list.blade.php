@@ -1,6 +1,6 @@
 <div class="row">
     @forelse($products as $product)
-        <div class="col-3 mb-3" wire:key="product-{{ $product->id }}">
+        <div class="col-4 mb-3" wire:key="product-{{ $product->id }}">
             <x-product-card :product="$product" />
         </div>
     @empty

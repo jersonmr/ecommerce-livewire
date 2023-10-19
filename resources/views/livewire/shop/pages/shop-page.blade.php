@@ -3,7 +3,7 @@
         {{-- Sidebar filters --}}
         <div
             style="height: 90vh; !important;"
-            class="col-sm-12 col-md-4 col-lg-4 col-xl-3 col-xxl-2 overflow-auto"
+            class="col-sm-12 col-md-4 col-lg-4 col-xl-3 overflow-auto"
         >
             <livewire:shop.filters.category-filter />
 
@@ -29,7 +29,7 @@
         </div>
 
         {{-- Products --}}
-        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-9 col-xxl-10">
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-9">
             <div class="row">
                 <div class="col-auto mb-3">
                     <button class="btn btn-danger" wire:click="resetFilters">

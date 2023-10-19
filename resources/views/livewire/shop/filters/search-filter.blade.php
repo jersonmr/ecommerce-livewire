@@ -1,3 +1,6 @@
-<div>
-    {{-- Because she competes with no one, no one can compete with her. --}}
+<div class="input-group">
+    <input type="text"
+           class="form-control"
+           placeholder="Write your search..."
+           wire:model.debounce.500.live="filter.search">
 </div>

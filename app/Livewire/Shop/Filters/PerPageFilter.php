@@ -13,7 +13,7 @@ class PerPageFilter extends Filter
         'perPage' => self::DEFAULT_PER_PAGE,
     ];
 
-    const DEFAULT_PER_PAGE = 4;
+    const DEFAULT_PER_PAGE = 3;
 
     public function render(): \Illuminate\Contracts\View\View
     {
