@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Shop\Pages;
 
-use Illuminate\View\View;
+use App\Models\Product;
 use Livewire\Component;
 
 class ShopPage extends Component
@@ -12,8 +12,11 @@ class ShopPage extends Component
         // TODO: reset shop filters
     }
 
-    public function render(): View
+    public function render(): \Illuminate\Contracts\View\View
     {
-        return view('livewire.shop.pages.shop-page');
+        $product = Product::first();
+        return view('livewire.shop.pages.shop-page', [
+            'product' => $product,
+        ]);
     }
 }
