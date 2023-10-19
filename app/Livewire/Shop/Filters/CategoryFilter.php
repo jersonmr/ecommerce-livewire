@@ -2,12 +2,17 @@
 
 namespace App\Livewire\Shop\Filters;
 
+use App\Models\Category;
+use App\Traits\Livewire\WithModelsFilter;
+use App\Traits\Livewire\WithMultipleFilter;
 use Livewire\Component;
 
-class CategoryFilter extends Component
+class CategoryFilter extends Filter
 {
-    public function render()
-    {
-        return view('livewire.shop.filters.category-filter');
-    }
+    use WithModelsFilter;
+    use WithMultipleFilter;
+
+    public string $title = 'Categories';
+
+    public string $eloquentModel = Category::class;
 }
