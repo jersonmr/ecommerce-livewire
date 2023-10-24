@@ -22,6 +22,9 @@ class ProductsList extends Component
         'search' => '',
         'price' => [],
         'rating' => null,
+        'color' => [],
+        'size' => [],
+        'brand' => [],
     ];
 
     public function mount(): void
